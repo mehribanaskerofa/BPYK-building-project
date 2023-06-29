@@ -2,9 +2,14 @@
 /* header-------------------------------------------- */
 header{
   
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
-    background: linear-gradient(180deg, rgba(105,146,184,1) 0%, rgba(224,219,214,1) 98%);;
+    background: linear-gradient(180deg, rgba(105,146,184,1) 0%, rgba(105,146,184,1)  98%);
+}
+.header-bottom-section{
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(180deg, rgba(105,146,184,1) 0%, rgba(224,219,214,1) 98%);;
 }
 .header{
     width: 100%;
@@ -39,13 +44,20 @@ header{
     padding: 0 20px ;
     font-size: 18px;
 }
+.header-menu-right-phone a{
+  color: white;
+}
+.header-menu-left-button{
+  cursor: pointer;
+}
 .header-menu-left-button span{
     padding: 0 10px;
 }
 .header-menu-left-item{
+  cursor: pointer;
     padding-left: 30px;
 }
-.header-menu-right-call-button{
+.header-menu-right-call-button a{
     padding: 8px 30px;
     display: flex;
     justify-content: center;
@@ -74,7 +86,7 @@ header{
 .header-bottom{
     position: relative;
     z-index: 0;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .header-bottom-img{
@@ -294,7 +306,7 @@ z-index: 1;
       font-size: 250px;
   }
   .header-bottom-img{
-      transform: scale(1.5);
+      transform: scale(1.2);
   }
   .header-menu-right-call-button{
       border-radius: 50%;
@@ -314,7 +326,7 @@ z-index: 1;
   }
   .header-bottom-img{
       padding-top: 150px;
-      transform: scale(2.5);
+      transform: scale(2);
       overflow: hidden;
   }
 }
@@ -418,7 +430,16 @@ img{
   padding-left: 0;
   padding-right: 10px;
 }
+.about-right-title-1{
+  font-size: 50px;
+
 }
+}
+@media (max-width: 500px) {
+  .about-right-title-1{
+    font-size: 30px;
+  }
+  }
 /* ========================================================= */
 
 /* river----------------------------------------------------- */
@@ -429,7 +450,7 @@ img{
 }
 .river-container{
   max-width: 95%;
-  height: 90vh;
+  /* height: 90vh; */
   margin: 0 auto;
   display: flex;
   align-items: start;
@@ -453,6 +474,7 @@ img{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 1;
 }
 .river-context{
   font-size: 18px;
@@ -1046,6 +1068,7 @@ img{
       text-align: center;
       padding: 15px 20px;
       border-radius: 30px;
+      cursor: pointer;
   }
   .specious-room-button a{
       color: #817b7b;
@@ -1138,6 +1161,7 @@ padding: 5px 0;
   width: 44%;
   padding: 5px 0;
   position: relative;
+  cursor: pointer;
 }
 .grand-context{
   border-bottom: 1px solid #c6c0ba;
@@ -1340,6 +1364,7 @@ float: right;
   font-size: 14px;
   font-weight: 400;
   border-radius: 30px;
+  cursor: pointer;
   background-color: #605348;
   border-color: transparent;
   border-style: solid;
@@ -1447,6 +1472,7 @@ font-size: 30px;
     outline: none;
     color: #ffffff;
     font-size: 14px;
+    cursor: pointer;
     border-radius: 30px;
     background-color: #605348;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -1474,6 +1500,7 @@ font-size: 30px;
       content: "\f060";
       color: #5f5348;;
     }
+    
   .rare-slider-item-buttons{
     /* position: absolute; */
     top: 7%;
@@ -1783,7 +1810,7 @@ font-size: 30px;
 .payment-title{
   width: 500px;
   color: #5f5348;
-  font-size: 90px;
+  font-size: 60px;
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 100px;
@@ -2169,4 +2196,55 @@ footer .main-web-file .res-file{
       display: none;
   }
 
+}
+
+
+
+
+/* master plan ------------------------ */
+
+.master-plan{
+  margin: 60px 0;
+  color:  rgb(92, 89, 86);
+}
+.master-plan-img{
+  position: relative;
+}
+.plan-btn{
+ position: absolute;
+  top: 23%;
+  left: 15%;
+}
+.masterplan-btn{
+  width: 40px;
+  height: 40px;
+  /* padding: 10px; */
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bolder;
+  cursor: pointer;
+ 
+}
+.plan-section-1{
+  opacity: 0;
+  padding: 10px;
+  width: 220px;
+  font-size: 16px;
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 30px;
+}
+.plan-section-title{
+  font-size: 20px;
+  padding: 10px 0;
+  font-weight: bolder;
+}
+
+.plan-btn:hover .plan-section-1{
+  z-index: 20000;
+  opacity: 1;
 }
