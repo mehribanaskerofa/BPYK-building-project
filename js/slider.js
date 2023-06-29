@@ -20,17 +20,17 @@ const swiper = new Swiper('.benefits-slider .swiper', {
 //   },
 });
 
-var paginationItems = document.querySelectorAll('.inf-head .pagination-item');
+var paginationItems = document.querySelectorAll('#infs .pagination-item');
 
 paginationItems.forEach(function(item, index) {
   item.addEventListener('click', function(e) {
     // e.preventDefault();
     paginationItems.forEach(function(item){
-         item.style.borderBottom = ""
+         item.style.borderBottom = "";
             }  
         )
  
-    this.style.borderBottom = "1px solid white"
+    this.style.borderBottom = "1px solid white";
 
     swiper1.slideTo(index);
   });
