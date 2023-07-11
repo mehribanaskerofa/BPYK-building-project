@@ -1,0 +1,28 @@
+@media(max-width:1255px){
+.main-cards .card{
+width: 48%;
+}
+.main-cards .card .slider-section {
+width: 100%;
+}
+}
+
+@media(max-width:740px){
+    .main-cards{
+        flex-direction: column;
+    }
+    .main-cards .card{
+        width: 100%;
+        height: max-content;
+        }
+}
+@media(max-width:390px){
+    .main-price-left .current-price {
+    font-size: 25px;
+    font-weight: bolder;
+    }
+    .main-price-left h3{
+        font-size: 20px;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+.slider1{
+  position: relative;
+}
+.swiper-wrapper{
+  /* width: 100%; */
+  flex-wrap: nowrap !important;
+  
+}
+
+.swiper-slide {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.slide-content {
+  font-size: 24px;
+  color: #333;
+}
+
+.custom-pagination {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  margin-top: 20px;
+  overflow: hidden; /* Kaydırma çubuğunu gizlemek için */
+  position: absolute;
+  top: 0;
+  left: 100px;
+  z-index: 1000;
+}
+
+.pagination-item {
+  margin: 0 10px;
+  padding: 5px 10px;
+  background-color: #888;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-item:hover {
+  background-color: #555;
+}
+
+
+
+.inner-slider .swiper-wrapper{
+  /* width: 100%; */
+  flex-wrap: nowrap !important;
+  
+}
+
+.inner-slider .inner-slide {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+
+
+.inner-slider .swiper-pagination {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  margin-top: 20px;
+  overflow: hidden; /* Kaydırma çubuğunu gizlemek için */
+  position: absolute;
+  top: 0;
+  left: 100px;
+  z-index: 1000;
+}
+
+
+
+</style>
+</head>
+
+<body>
+  
+
+
+    <div class="swiper slider1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide-content1">
+              <h2>Slider 1</h2>
+              <div class="inner-slider">
+                <div class="swiper-wrapper">
+                  <div class="inner-slide">1</div>
+                  <div class="inner-slide">2</div>
+                  <div class="inner-slide">3</div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content1">
+              <h2>Slider 1</h2>
+              <div class="inner-slider">
+                <div class="swiper-wrapper">
+                  <div class="inner-slide">1</div>
+                  <div class="inner-slide">2</div>
+                  <div class="inner-slide">3</div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content1">
+              <h2>Slider 1</h2>
+              <div class="inner-slider">
+                <div class="swiper-wrapper">
+                  <div class="inner-slide">1</div>
+                  <div class="inner-slide">2</div>
+                  <div class="inner-slide">3</div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="custom-pagination">
+          <div class="pagination-item">1</div>
+          <div class="pagination-item">2</div>
+          <div class="pagination-item">3</div>
+        </div>
+      </div>
+      
+
+
+
+
+
+  <script>
+  var swiper = new Swiper('.slider1', {
+    slidesPerView: 'auto',
+    
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+});
+
+var paginationItems = document.querySelectorAll('.slider1 .pagination-item');
+
+paginationItems.forEach(function(item, index) {
+  item.addEventListener('click', function() {
+    swiper.slideTo(index);
+  });
+});
+
+
+
+var innerSliders = document.querySelectorAll('.inner-slider');
+
+innerSliders.forEach(function (slider) {
+  new Swiper(slider, {
+    direction: 'vertical',
+    autoplay: {
+      delay: 1500,
+    },
+  });
+});
+  </script>
+</body>
+
+</html>

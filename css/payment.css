@@ -1,0 +1,129 @@
+.payment-content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.payment-head{
+    display: flex;
+    justify-content: space-between;
+}
+.payment-subtitle{
+    color: #5f5348;
+    font-size: 20px;
+    padding: 10px 0 0 50px;
+}
+.payment-title{
+    width: 500px;
+    color: #5f5348;
+    font-size: 90px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 100px;
+}
+.payment-left-item{
+    width: 500px;
+    padding: 20px 0;
+}
+.payment-context{
+    display: flex;
+    justify-content: end;
+}
+.payment-left-title{
+    color: #605348;
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 15px ;
+}
+.payment-item{
+    width: 150px;
+    color: #797169;
+    font-size: 20px;
+}
+.payment-left{
+    margin-right: 20px;
+}
+.payment-right{
+    height: 380px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: #dad7d0;
+    align-items: center;
+    padding: 30px;
+}
+.payment-form{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #605348;
+}
+.payment-form-title{
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.payment-form-select{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #928071;
+    padding: 10px 0;
+}
+#phone-payment{
+    width: 340px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #928071;
+    padding: 10px 50px;
+    /* margin: 20px; */
+}
+.payment-btn{
+    width: 100%;
+    padding: 13px 25px;
+    background-color: #605348;
+    color: white;
+    border-radius: 30px;
+}
+@media (max-width: 950px) {
+    .payment-left{
+        width: 80%; 
+    }
+    .payment-head{
+        padding-left: 20px;
+    }
+    .payment-right{
+        /* width: 80%; */
+        margin: 0 auto;
+    }
+    .payment-left-item {
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 500px) {
+    .payment-head{
+       padding: 20px 0;
+    }
+    .payment-title{
+        font-size: 30px;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+.payment-left-item{
+    width: 100%;
+    padding: 15px 0;
+}
+.payment-left-title{
+    font-size: 20px;
+}
+.payment-item{
+    font-size: 18px;
+}
+.payment-form{
+    height: 55%;
+}
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/infrastructure.css">
+</head>
+
+<body>
+  
+<section class="infrastructure w">
+
+    <!-- <div class="container"> -->
+        <div class="infs">
+            <div class="inf-head">
+                <div class="inf-head-subtitle"><span>Infrastructure</span></div>
+                <div class="inf-head-title"><span>SURROUNDED BY PARKS, SPORTS ARENAS, AND SHOPPING MALLS</span></div>
+                <div class="custom-pagination">
+                    <div class="pagination-item"><span>Riviera Mall</span></div>
+                    <div class="pagination-item"><span>Kolomenskoye</span></div>
+                     <div class="pagination-item"><span>Dream Island</span></div>
+                </div>
+            </div>
+            <div class="swiper inf">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slide-content1">
+              <img src="image/inf.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content1">
+                <img src="image/inf.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide-content1">
+                <img src="image/inf.jpg" alt="">
+            </div>
+          </div>
+        
+        </div>
+      
+            </div>
+        </div>
+    <!-- </div> -->
+</section>
+
+    
+      
+
+
+
+
+
+  <script>
+  var swiper = new Swiper('.inf', {
+    // slidesPerView: 'auto',
+  
+    
+    
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+});
+
+var paginationItems = document.querySelectorAll('.inf-head .pagination-item');
+
+paginationItems.forEach(function(item, index) {
+  item.addEventListener('click', function(e) {
+    // e.preventDefault();
+    paginationItems.forEach(function(){
+         _btn => _btn.style.borderBottom = ""
+            }  
+        )
+ 
+    this.style.borderBottom = "1px solid white"
+
+    swiper.slideTo(index);
+  });
+});
+
+  </script>
+</body>
+
+</html>

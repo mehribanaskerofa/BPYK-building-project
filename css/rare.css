@@ -1,0 +1,85 @@
+.rare-head{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+.rare-name{
+    color: #5f5348;
+    font-size: 32px;
+}
+.rares .swiper {
+    max-width: 100%;
+    color: #5f5348;
+    padding-left: 20px;
+  }
+ .rares .swiper-wrapper{
+    /* max-width: 100%; */
+    flex-wrap: nowrap !important;
+    
+  }
+ .rares .swiper-slide{
+    background-color: #c3b4a6;
+    width: 340px !important;
+    margin: 20px;
+  }
+.rare-item-img{
+    width: 100%;
+}
+.rare-item-img img{
+    width: 100%;
+}
+.rare-item-content{
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #605348;
+    padding: 25px;
+    
+}
+.rare-item-title{
+font-size: 30px;
+}
+.rare-item-text{
+    font-size: 18px;
+    padding: 10px 0;
+}
+.rare-item-btn{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 30px;
+    background-color: #605348;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+  .rares .swiper-button-prev, .swiper-rtl .swiper-button-prev{
+    left: 86% !important;
+    top: 40px;
+  }
+  .rares .swiper-button-next, .swiper-rtl .swiper-button-next{
+    right: 7% !important;
+    top: 40px;
+    }
+    .rares .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+      font-family: "Font Awesome 5 Free";
+      font-size: 30px;
+      font-weight: 900;
+      content: "\f061";
+      color: #5f5348;;
+    }
+    .rares .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+      font-family: "Font Awesome 5 Free";
+      font-size: 30px;
+      font-weight: 900;
+      content: "\f060";
+      color: #5f5348;;
+    }
+    @media (max-width: 800px) {
+        .rares .swiper-button-prev, .swiper-rtl .swiper-button-prev{
+            left: 77% !important;
+            top: 40px;
+          }
+    }

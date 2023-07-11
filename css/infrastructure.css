@@ -1,0 +1,61 @@
+.infs{
+    width: 100%;
+    position: relative;
+    padding: 30px;
+  }
+
+  .inf-head{
+    position: absolute;
+    top: 10px;
+    z-index: 1000;
+    padding: 30px;
+  }
+  .inf-head .custom-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 220px;
+    left: 27px;
+    z-index: 1000;
+  }
+.inf-head-subtitle{
+  font-size: 18px;
+  color: white;
+  padding: 15px 0;
+}
+.inf-head-title{
+  max-width: 500px;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+.inf-head .pagination-item {
+  /* margin: 0 40px; */
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+  .inf .swiper-wrapper{
+    width: 100%;
+    flex-wrap: nowrap !important;   
+  }
+  .infs .slide-content1{
+    width: 100%;
+    height: 100vh;
+  }
+  .infs .swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ 
+  
+  
+
+  
+  
+  

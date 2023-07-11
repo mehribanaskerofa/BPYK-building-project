@@ -1,0 +1,84 @@
+.specious-rooms{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.specious-rooms>div:last-child{
+    margin-top: 35px;
+}
+.specious-room{
+    max-width: 450px;
+    height: 470px;
+    padding: 30px;
+}
+.specious-room-container{
+    width: 100%;
+    height: 100%;
+}
+.specious-room-container{
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    position: relative;
+}
+.back-black{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.4;
+    z-index: 1;
+}
+.specious-room-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    /* align-items: end;
+    justify-content: end; */
+    z-index: 2;
+}
+.specious-room-context{
+    display: flex;
+    flex-direction: column;
+}
+.specious-room-title,
+.specious-room-text{
+    color: white;
+}
+.specious-room-title{
+    font-size: 24px;
+}
+.specious-room-text{
+    font-size: 18px;
+    padding: 15px 0;
+}
+.specious-room-button{
+    max-width: 220px;
+    background-color: white;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 30px;
+}
+.specious-room-button a{
+    color: #817b7b;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+@media (max-width: 750px) {
+    .specious-rooms>div:last-child{
+        margin-top: 0px;
+    }
+    .specious-room-content{
+        height: 100%;
+    }
+
+}
+@media (max-width: 550px) {
+    .specious-rooms{
+        flex-wrap: wrap;
+    }
+}

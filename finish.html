@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="css/finish.css">
+
+</head>
+
+<body>
+
+  
+    <section class="finish w">
+        <div class="container">
+            <div class="finish-container">
+
+            <div class="finish-head">
+                <div class="finish-subtitle"><span>Finishing</span></div>
+                <div class="finish-title"><span>Full free expression or WOW-finishing?
+                    It's up to you to decide.</span></div>
+            </div>
+
+            <div class="finish-content">
+                <div class="swiper slider-finish">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="slide-content1">
+                          <div class="swiper inner-slider">
+                            <div class="swiper-wrapper inner" >
+                              <div class="swiper-slide inner-slide">
+                                    <div class="inner-slide-img"><img src="/image/light.jpg" alt="">
+                                    </div>
+                                </div>
+                              <div class="swiper-slide inner-slide">
+                                <div class="inner-slide-img"><img src="/image/light1.jpg" alt="">
+                                </div>
+                              </div>
+                              <div class="swiper-slide inner-slide">
+                                <div class="inner-slide-img"><img src="/image/light2.jpg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                          </div>
+                        </div>
+            
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-content1">
+                            <div class="swiper inner-slider">
+                              <div class="swiper-wrapper inner" >
+                                <div class="swiper-slide inner-slide">
+                                      <div class="inner-slide-img"><img src="/image/light.jpg" alt="">
+                                      </div>
+                                  </div>
+                                <div class="swiper-slide inner-slide">
+                                  <div class="inner-slide-img"><img src="/image/light1.jpg" alt="">
+                                  </div>
+                                </div>
+                                <div class="swiper-slide inner-slide">
+                                  <div class="inner-slide-img"><img src="/image/light2.jpg" alt="">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="swiper-pagination"></div>
+                              <div class="swiper-button-prev"></div>
+                              <div class="swiper-button-next"></div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-content1">
+                            <div class="swiper inner-slider">
+                              <div class="swiper-wrapper inner" >
+                                <div class="swiper-slide inner-slide">
+                                      <div class="inner-slide-img"><img src="/image/light.jpg" alt="">
+                                      </div>
+                                  </div>
+                                <div class="swiper-slide inner-slide">
+                                  <div class="inner-slide-img"><img src="/image/light1.jpg" alt="">
+                                  </div>
+                                </div>
+                                <div class="swiper-slide inner-slide">
+                                  <div class="inner-slide-img"><img src="/image/light2.jpg" alt="">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="swiper-pagination"></div>
+                              <div class="swiper-button-prev"></div>
+                              <div class="swiper-button-next"></div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="custom-pagination">
+                      <div class="pagination-item">light</div>
+                      <div class="pagination-item">Stone</div>
+                      <div class="pagination-item">sand</div>
+                    </div>
+                  </div>
+                  
+            </div>
+
+            </div>
+        </div>
+        </section>
+
+  
+
+
+
+
+
+  <script>
+  var swiper = new Swiper('.slider-finish', {
+    // slidesPerView: 'auto',
+    
+  navigation: {
+    nextEl: '.slider-finish .swiper-button-next',
+    prevEl: '.slider-finish .swiper-button-prev',
+  },
+});
+
+var paginationItems = document.querySelectorAll('.slider-finish .pagination-item');
+
+paginationItems.forEach(function(item, index) {
+  item.addEventListener('click', function() {
+    swiper.slideTo(index);
+    for (let j = 0; j < paginationItems.length; j++) {
+        paginationItems[j].style.backgroundColor = '';
+        paginationItems[j].style.color = '';
+    }
+console.log(this.className)
+    // Tıklanan düğmenin arka plan rengini değiştirin
+    this.style.backgroundColor = '#605348';
+    this.style.color = '#fff';
+  });
+});
+
+
+
+var innerSliders = document.querySelectorAll('.finish .inner-slider');
+
+innerSliders.forEach(function (slider) {
+  new Swiper(slider, {
+    // direction: 'vertical',
+    autoplay: {
+      delay: 2500,
+    },
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.inner-slider .swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.inner-slider .swiper-button-next',
+    prevEl: '.inner-slider .swiper-button-prev',
+  },
+  });
+});
+
+
+
+// const buttons = document.getElementsByClassName('.finish .custom-pagination .pagination-item');
+
+// Her bir düğme için olay dinleyicisi ekle
+// for (let i = 0; i < buttons.length; i++) {
+//   buttons[i].addEventListener('click', function() {
+//     // Tüm düğmelerin arka plan rengini sıfırlayın
+//     for (let j = 0; j < buttons.length; j++) {
+//       buttons[j].style.backgroundColor = '';
+//     }
+
+//     // Tıklanan düğmenin arka plan rengini değiştirin
+//     this.style.backgroundColor = 'red';
+//   });
+// }
+  </script>
+</body>
+
+</html>

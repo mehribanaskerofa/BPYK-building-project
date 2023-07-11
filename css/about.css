@@ -1,0 +1,42 @@
+.about{
+    background: url(/image/about-background.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.about-container{
+    display: flex;
+    justify-content: space-between;
+}
+.about-left{
+    max-width: 200px;
+    background-color: aquamarine;
+    font-size: 18px;
+    line-height: 30px;
+}
+.about-right{
+    width: 80%;
+}
+.about-right-image{
+    max-width: 900px;
+    padding-left: 120px;
+}
+img{
+    width: 100%;
+}
+.about-right-title-1{
+    font-size: 80px;
+    text-indent: 100px;
+    word-wrap: break-word;
+    
+}
+.about-right-text{
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 690px;
+    padding: 35px 0 30px 120px;
+    line-height: 30px;
+
+}
+.about-right-text p{
+    padding: 10px 0;
+}

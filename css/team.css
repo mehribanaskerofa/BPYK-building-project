@@ -1,0 +1,26 @@
+.team-container{
+    padding: 30px 20px;
+}
+.team-head{
+    color: #5f5348;
+    font-size: 32px;
+    padding-left: 20px;
+}
+
+.team-items{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+.team-item{
+    width: 220px;
+    padding: 20px;
+}
+.team-item img{
+    width: 100%;
+}
+@media (max-width: 940px) {
+    .team-item{
+        width: 320px;
+    }
+}

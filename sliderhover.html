@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/sliderhover.css">
+</head>
+
+<body>
+  
+  <section class="benefites w">
+    <div class="benefit-head">
+      <div class="benefit-name"><span>Benefits</span></div>
+      <div class="benefit-head-title"><span>WOW-HOUSE HAS EVERYTHING, INCLUDING AN OFFICE BLOCK AND A
+          KINDERGARTEN</span></div>
+    </div>
+    <div class="benefits-slider w">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            aaa
+          </div>
+          <div class="swiper-slide">
+            aaa
+          </div>
+        </div>
+        <div class="swiper-button-prev">adc</div>
+                  <div class="swiper-button-next">sdc</div>
+                  <div class="swiper-pagination">
+                    <div class="pagination-item">Sözcük 1</div>
+                    <div class="pagination-item">Sözcük 2</div>
+                    <div class="pagination-item">Sözcük 3</div>
+                  </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+
+        direction: 'horizental',
+        loop: true,
+ 
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      on: {
+    slideChange: function () {
+      var activeIndex = swiper.activeIndex;
+      var paginationItems = document.querySelectorAll('.pagination-item');
+
+      paginationItems.forEach(function (item, index) {
+        if (index === activeIndex) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+    },
+  },
+    });
+    $('.swiper-pagination-bullet').hover(function() {
+      $( this ).trigger( "click" );
+   });
+    
+  </script>
+</body>
+
+</html>

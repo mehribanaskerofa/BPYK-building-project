@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+</head>
+<body>
+
+    
+    <section class="contact w">
+        <div class="container">
+            <div class="contact-container w">
+                <div class="contact-content">
+                    <h1>WANT TO LIVE <br> HERE? <span>Leave your contacts and we will call you back</span></h1>
+                   
+                </div>
+
+                <div class="contact-context">
+                    <div class="contact-form">
+                        <form class="w">
+                                <div class="contact-form-container w">
+                            <div class="contact-form-input w">
+                                <input id="phone" type="tel" name="phone" />
+                            </div>                                  
+                            <button class="contact-form-button">Send</button>
+                                </div>
+                          </form>
+                    </div>
+                    <div class="contact-subtext">
+                        <span>I consent to the processing of </span><a href="">personal data</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+          utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+      </script>
+</body>
+</html>

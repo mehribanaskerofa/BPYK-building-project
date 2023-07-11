@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+ 
+  <div>
+    <button class="room-filter">1 Oda</button>
+    <button class="room-filter">2 Oda</button>
+    <button class="room-filter">3 Oda</button>
+    <button class="room-filter">4+ Oda</button>
+  </div>
+  
+  <input type="range" id="min-price" min="0" max="1000" step="10" value="0">
+  <span id="min-price-label">$0</span>
+  <input type="range" id="max-price" min="0" max="1000" step="10" value="1000">
+  <span id="max-price-label">$1000</span>
+  <input type="range" id="min-area" min="0" max="100" step="1" value="0">
+  <span id="min-area-label">0 m²</span>
+  <input type="range" id="max-area" min="0" max="100" step="1" value="100">
+  <span id="max-area-label">100 m²</span>
+  
+  <ul id="card-list">
+    <li class="card" data-price="100" data-area="50" data-rooms="1">Card 1 - $100, 50 m², 1 Oda</li>
+    <li class="card" data-price="200" data-area="70" data-rooms="2">Card 2 - $200, 70 m², 2 Oda</li>
+    <li class="card" data-price="300" data-area="30" data-rooms="1">Card 3 - $300, 30 m², 1 Oda</li>
+    <li class="card" data-price="400" data-area="80" data-rooms="3">Card 4 - $400, 80 m², 3 Oda</li>
+    <li class="card" data-price="500" data-area="60" data-rooms="2">Card 5 - $500, 60 m², 2 Oda</li>
+  </ul>
+  
+  
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+      <script src="./filterarea.js"></script>
+    </body>
+</html>

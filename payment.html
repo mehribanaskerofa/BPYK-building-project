@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+
+    <style>
+        .payment-content{
+            color: #5f5348;
+            padding: 40px 0;
+        }
+        .pay-body-item {
+            display: flex;
+            justify-content: space-between;
+        }
+.payment-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+        .payment-left-dropdown {
+            margin: 0 10px;
+        }
+        .payment-left-head{
+            padding: 10px 0 20px 20px;
+            font-size: 30px;
+            color: #5f5348;
+        }
+        .select-item-text{
+            display: flex;
+            justify-content: space-between;
+        }
+        .payment-content>div{
+                height: 380px;
+                
+        }
+        .payment-right{
+            width: 420px;
+            background-color: #5f5348;
+            color: white;
+        }
+        .payment-left-body{
+                height: 83%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+        }
+        .custom-select .select1,
+        .custom-select .select2,
+        .custom-select .select3,
+        .custom-select .select-item-text,
+        .payment-left-dropdown input {
+            width: 220px;
+            padding: 6px 12px;
+            font-size: 16px;
+            background: transparent;
+            border: 1px solid #5f5348;
+            color: #5f5348;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .custom-select .select4,
+        .custom-select .select5
+        {
+            width: 40px;
+            font-size: 14px;
+            background: transparent;
+            border: 1px solid #5f5348;
+            color: #5f5348;
+            border-radius: 5px;
+        }
+        .payment-left-button{
+            margin: 0 auto;
+            width: 150px;
+        }
+        .payment-left-button button{
+            margin: 0 auto;
+            width: 150px;
+            padding: 10px 12px;
+            outline: none;
+            border: none;
+            background-color: #5f5348;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .payment-right-top{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 200px;
+            /* background-color: #5f5348; */
+            border-bottom: 2px solid white;
+        }
+        .payment-right-price{
+            font-size: 50px;
+            font-weight: bolder;
+        }
+        .payment-right-bottom{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;        
+            align-items: start; 
+            padding-top: 20px; 
+        }
+        .payment-right-top-head{
+            font-size: 20px;
+        }
+        .payment-right-bottom-item-text{
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="payment w">
+        <div class="container">
+            <div class="payment-container">
+                <div class="payment-head">
+                    <div class="payment-subtitle"><span>PAYMENT</span></div>
+                    <div class="payment-title"><span>WEYS OF PURCHASE</span></div>
+                </div>
+
+                <div class="payment-content">
+                    <div class="payment-left">
+
+                        <div class="payment-left-head"><span>Daxili Kredit Kalkulyatoru</span></div>
+                       
+                        <div class="payment-left-body">
+                            <div class="pay-body-item">
+                                <div class="payment-left-dropdown">
+                                    <span>Binalar</span>
+                                    <div class="dropdown">
+                                        <div class="custom-select">
+                                            <select class="select1">
+                                                <option value="1">bina 1</option>
+                                                <option value="2">bina 2</option>
+                                                <option value="3">bina 3</option>
+                                                <option value="4">bina 4</option>
+                                                <option value="5">bina 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payment-left-dropdown">
+                                    <span>Mertebeler</span>
+                                    <div class="dropdown">
+                                        <div class="custom-select">
+                                            <select class="select2">
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                            <div class="pay-body-item">
+                                <span style="width: 100%; margin-left: 10px;">Sahe</span>
+                                <div class="payment-left-dropdown">
+                                    <div class="dropdown">
+                                        
+                                        <div class="custom-select">
+                                            <select class="select3">
+                                               
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payment-left-dropdown">
+                                    <div class="dropdown">
+                                        <div class="custom-select">
+                                            <div class="select-item-text">
+                                                <span>Ilkin odenis</span>
+                                                <select class="select4">
+
+                                                </select>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pay-body-item">
+                                <div class="payment-left-dropdown">
+                                    <div class="dropdown">
+                                        <div class="custom-select">
+                                            <div class="select-item-text">
+                                                <span>Ayliq odenis</span>
+                                                <select class="select5">
+
+                                                </select>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payment-left-dropdown">
+                                    <div class="dropdown">
+                                        <div class="custom-select">
+                                            <div class="select-item-text">
+                                                <span>Umumi qiymet</span>
+                                               <span class="all-price"></span>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="payment-left-button">
+                                <button>Hesabla</button>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    <div class="payment-right" >
+                        <div class="payment-right-top">
+                            <div class="payment-right-top-head"><span>Aylıq ödəniş</span></div>
+                            <div class="payment-right-title"><span class="payment-right-price" >0</span></div>
+                        </div>
+                        <div class="payment-right-bottom">
+                            <div class="payment-right-bottom-item">
+                                <p class="payment-right-bottom-item-text">İlkin ödəniş</p>
+                                <div class="payment-bottom-title"><span class="payment-bottom-price" >0</span></div>
+                            </div>
+                            <div class="payment-right-bottom-item">
+                                <p class="payment-right-bottom-item-text">Ödəniş müddəti</p>
+                                <div class="payment-bottom-title"><span class="payment-bottom-price" >0</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script>
+        const phoneInputField = document.querySelector("#phone-payment");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    </script>
+
+
+
+
+
+    <script>
+        var selected_bina = 1;
+        var selected_group = 0;
+        var selected_price = 0, selected_area = 0, selected_percent = 100, selected_month = 0;
+
+
+        var group = [1200, 1250, 1300, 1500];
+        var m = [
+            [60.9, 70.2, 61.1, 60.5],//1
+            [91.7, 91.1, 91.4, 94.4],//2
+            [145.5],//3
+            [194.9],//4
+            [366.3, 336.2]//pento
+        ];
+        var precent = [25, 50, 100];
+        var month = [12, 24, 36];
+
+        var selected_m = [];
+
+        // console.log(menzil_tipi[0][2])
+        var menzil_area = [{
+            bina1: [
+                m[0][1], m[0][2],
+                m[1][0], m[1][1],
+                m[2][0],
+                m[3][0],
+                m[4][0], m[4][1]
+            ],
+
+        }]
+
+
+        var menzil_qiymeti = 0;
+
+        // var binaTipi = document.getElementById("binaTipi").value;
+        //   var blokSayisi = parseInt(document.getElementById("blokSayisi").value);
+        //   var evSayisi = parseInt(document.getElementById("evSayisi").value);
+        //   var metrekare = parseFloat(document.getElementById("metrekare").value);
+
+
+        x = document.getElementsByClassName("select1")[0];
+        y = document.getElementsByClassName("select2")[0];
+        z = document.getElementsByClassName("select3")[0];
+        precentItem = document.getElementsByClassName("select4")[0];
+        monthItem = document.getElementsByClassName("select5")[0];
+        all_price = document.getElementsByClassName("all-price")[0];
+
+
+        group_tipi(selected_bina);
+        menzil_tipi(selected_bina);
+        month_tipi();
+        precent_tipi();
+
+        x.addEventListener('change', function (e) {
+            e.stopPropagation()
+            selected_bina = this.value
+            console.log(this.value)
+            group_tipi(selected_bina);
+            menzil_tipi(selected_bina);
+        })
+
+
+        y.addEventListener('change', function (e) {
+            e.stopPropagation()
+            console.log(group[this.value])
+            selected_price = group[this.value];
+        });
+        z.addEventListener('change', function (e) {
+            e.stopPropagation()
+            console.log(this.text, this.value)
+            selected_area = parseFloat(this.value)
+            hesapla()
+        });
+        precentItem.addEventListener('change', function (e) {
+            e.stopPropagation()
+            console.log(this.value)
+            selected_percent = parseInt(this.value)
+            hesapla()
+        });
+        monthItem.addEventListener('change', function (e) {
+            e.stopPropagation()
+            console.log(this.value)
+            selected_month = parseInt(this.value)
+            hesapla()
+        });
+
+        function group_tipi(tip = 1) {
+            console.log('tip:' + tip);
+            if (tip == 1 || tip == 2 || tip == 3) {
+                y.innerHTML = ` <option value="0">3-6</option>
+                           <option value="1">7-10</option>
+                           <option value="2">11-13</option>
+                           <option value="3">pento</option>
+                                           `
+            }
+            else {
+                y.innerHTML = ` <option value="0">3-5</option>
+                           <option value="1">6-8</option>
+                           <option value="2">9-11</option>
+                           <option value="3">pento</option>
+                                      `
+            }
+        }
+        function precent_tipi() {
+            selected_percent = precent[0];
+            precent.forEach(element => {
+                precentItem.innerHTML += `<option value="${element}">${element}</option>`
+            });
+        }
+        function month_tipi() {
+            selected_month = month[0];
+            month.forEach(element => {
+                monthItem.innerHTML += `<option value="${element}">${element}</option>`
+            });
+        }
+        // function area_tipi(){
+        //       month.forEach(element => {
+        //         monthItem.innerHTML+=`<option value="${element}">${element}</option>`  
+        //       });
+        // }
+
+
+        var deletions = [60.9, 70.2, 91.4, 94.4];
+
+        function menzil_tipi(selected_bina = 0) {
+            selected_m = m;
+            if (selected_bina == 5) {
+                for (var i = 0; i < selected_m.length; i++) {
+                    for (var j = selected_m[i].length - 1; j >= 0; j--) {
+                        if (deletions.includes(selected_m[i][j])) {
+                            selected_m[i].splice(j, 1);
+                        }
+                    }
+                }
+            }
+
+            z.innerHTML = '';
+            for (var i = 0; i < selected_m.length; i++) {
+                for (var j = 0; j < selected_m[i].length; j++) {
+                    z.innerHTML += `<option value="${selected_m[i][j]}">${selected_m[i][j]}</option>`
+                }
+            }
+        }
+
+        hesapla()
+
+        function hesapla() {
+
+            var pay_area = 0;
+            var rest_area = 0;
+            if (precent.includes(selected_percent)) {
+                pay_area = (selected_area * selected_percent) / 100;
+                rest_area = selected_area - pay_area;
+            }
+
+            var paid_price = pay_area * selected_price;
+            var pay_price = rest_area * (selected_price + 25);
+            var pay_month = 0;
+            if (month.includes(selected_month)) {
+                pay_month = pay_price / selected_month;
+            }
+            console.log(paid_price, pay_month, pay_price)
+            all_price.innerHTML=paid_price+paid_price;
+            //   if (binaTipi === "apartman") {
+            //     birimFiyat = 2000; // Apartman için birim fiyat
+            //   } else if (binaTipi === "villa") {
+            //     birimFiyat = 3000; // Villa için birim fiyat
+            //   } else {
+            //     document.getElementById("sonuc").innerHTML = "Geçersiz bina tipi!";
+            //     return;
+            //   }
+
+            //   var binaDegeri = birimFiyat * blokSayisi * evSayisi * metrekare;
+
+            //   document.getElementById("sonuc").innerHTML = "Bina Değeri: " + binaDegeri;
+        }
+
+    </script>
+</body>
+
+</html>

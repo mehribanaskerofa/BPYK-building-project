@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+.galary .swiper {
+  width: 100%;
+  height: 450px;
+  background-color: rgb(133, 87, 27);
+}
+.galary .swiper-wrapper{
+  flex-wrap: nowrap !important;
+  
+}
+.galary .swiper-slide img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    background-position: center center;
+}
+.galary .swiper-slide {
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.galary .slide-content {
+  font-size: 24px;
+  color: #333;
+}
+.galary .galary-head{
+    color: #5f5348;
+    font-size: 32px;
+    padding: 20px 0;
+}
+
+
+
+
+</style>
+</head>
+
+<body>
+  
+<section class="galary w">
+    <div class="container">
+        <div class="galary-slider">
+            <div class="galary-head">
+                <span>Gallery</span>
+            </div>
+              <div class="swiper slider-galary">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+                <img src="/image/light.jpg" alt="">
+
+          </div>
+          <div class="swiper-slide">
+                <img src="/image/light1.jpg" alt="">             
+          </div>
+          <div class="swiper-slide">
+                <img src="/image/light2.jpg" alt="">             
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      
+        </div>
+    </div>
+</section>
+
+  
+
+
+
+
+
+  <script>
+  var swiper = new Swiper('.slider-galary', {
+    slidesPerView: 'auto',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+    
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+  </script>
+</body>
+
+</html>

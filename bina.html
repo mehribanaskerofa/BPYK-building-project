@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .div{
+        width: 100%;
+        height: 400px;
+        position: relative;
+    }
+     img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.building {
+  width: 100px;
+  height: 200px;
+  background-color: #ccc;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.building:hover {
+  background-color: #000;
+}
+
+.info {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.container:hover .building {
+  background-color: #000;
+}
+
+.container:hover .info {
+  opacity: 1;
+  visibility: visible;
+}
+
+</style>
+</head>
+<body>
+
+
+    <div class="div">
+        <img src="/image/light2.jpg" alt="" class="bina-img">
+<div class="container">
+  <div class="building"></div>
+  <div class="info">
+    <h3>Bina 1</h3>
+    <p>Yükseklik: 20 kat</p>
+    <p>Kat Sayısı: 5</p>
+  </div>
+</div>
+<div class="container">
+  <div class="building"></div>
+  <div class="info">
+    <h3>Bina 2</h3>
+    <p>Yükseklik: 15 kat</p>
+    <p>Kat Sayısı: 4</p>
+  </div>
+</div>
+<div class="container">
+  <div class="building"></div>
+  <div class="info">
+    <h3>Bina 3</h3>
+    <p>Yükseklik: 18 kat</p>
+    <p>Kat Sayısı: 6</p>
+  </div>
+</div>
+<div class="container">
+  <div class="building"></div>
+  <div class="info">
+    <h3>Bina 4</h3>
+    <p>Yükseklik: 12 kat</p>
+    <p>Kat Sayısı: 3</p>
+  </div>
+</div>
+<div class="container">
+  <div class="building"></div>
+  <div class="info">
+    <h3>Bina 5</h3>
+    <p>Yükseklik: 16 kat</p>
+    <p>Kat Sayısı: 4</p>
+  </div>
+</div>
+<div class="container">
+  <div class="building"></div>
+  <div class="info">
+    <h3>Bina 6</h3>
+    <p>Yükseklik: 10 kat</p>
+    <p>Kat Sayısı: 2</p>
+  </div>
+</div>
+</div>
+</body>
+</html>
